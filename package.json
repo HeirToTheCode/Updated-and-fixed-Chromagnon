@@ -1,0 +1,48 @@
+{
+  "name": "chromagnon",
+  "version": "1.2.0",
+  "description": "Extract data from Chrome",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "check": "npm run lint && npm run build",
+    "lint": "tslint -p .",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhleong/chromagnon.git"
+  },
+  "keywords": [
+    "chrome"
+  ],
+  "author": "Daniel Leong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhleong/chromagnon/issues"
+  },
+  "homepage": "https://github.com/dhleong/chromagnon#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.5.0",
+    "keytar": "^7.9.0",
+    "leveldown": "^6.1.0",
+    "levelup": "^5.1.1",
+    "tldjs": "^2.3.1",
+    "tough-cookie": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.5.0",
+    "@types/leveldown": "^4.0.3",
+    "@types/levelup": "^5.1.1",
+    "@types/node": "^17.0.21",
+    "@types/tldjs": "^2.3.1",
+    "@types/tough-cookie": "^4.0.1",
+    "typescript": "^4.6.2"
+  }
+}
